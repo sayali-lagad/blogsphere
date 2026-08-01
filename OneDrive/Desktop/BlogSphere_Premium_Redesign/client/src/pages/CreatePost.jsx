@@ -9,9 +9,9 @@ export default function CreatePost() {
   const handleCreatePost = async () => {
     try {
       const response = await fetch(
-        'http://localhost:5000/api/posts',
-        {
-          method: 'POST',
+  'https://blogsphere-vj2p.onrender.com/api/posts',
+  {
+    method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },

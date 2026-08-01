@@ -16,7 +16,7 @@ export default function EditPost() {
   const fetchPost = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/posts/${id}`
+        `https://blogsphere-vj2p.onrender.com/api/posts/${id}`
       );
 
       const data = await response.json();
@@ -32,7 +32,7 @@ export default function EditPost() {
   const handleUpdate = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/posts/${id}`,
+        `https://blogsphere-vj2p.onrender.com/api/posts/${id}`,
         {
           method: 'PUT',
           headers: {

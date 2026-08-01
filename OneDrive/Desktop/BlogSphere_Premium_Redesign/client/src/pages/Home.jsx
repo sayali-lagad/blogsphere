@@ -29,7 +29,7 @@ export default function Home() {
   const fetchPosts = async () => {
     try {
       const response = await fetch(
-        'http://localhost:5000/api/posts'
+        'https://blogsphere-vj2p.onrender.com/api/posts'
       );
 
       const data = await response.json();
@@ -43,7 +43,7 @@ export default function Home() {
   const fetchStats = async () => {
     try {
       const response = await fetch(
-        'http://localhost:5000/api/posts/stats'
+        'https://blogsphere-vj2p.onrender.com/api/posts/stats'
       );
 
       const data = await response.json();

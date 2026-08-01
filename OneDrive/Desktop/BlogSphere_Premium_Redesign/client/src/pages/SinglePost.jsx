@@ -22,7 +22,7 @@ export default function SinglePost() {
   const fetchPost = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/posts/${id}`
+        `https://blogsphere-vj2p.onrender.com/api/posts/${id}`
       );
 
       const data = await response.json();
@@ -36,7 +36,7 @@ export default function SinglePost() {
   const fetchComments = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/comments/${id}`
+        `https://blogsphere-vj2p.onrender.com/api/comments/${id}`
       );
 
       const data = await response.json();
@@ -50,7 +50,7 @@ export default function SinglePost() {
   const handleLike = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/posts/like/${id}`,
+        `https://blogsphere-vj2p.onrender.com/api/posts/like/${id}`,
         {
           method: 'PUT'
         }
@@ -69,7 +69,7 @@ export default function SinglePost() {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/posts/${id}`,
+        `https://blogsphere-vj2p.onrender.com/api/posts/${id}`,
         {
           method: 'DELETE'
         }
@@ -88,7 +88,7 @@ export default function SinglePost() {
   const handleComment = async () => {
     try {
       const response = await fetch(
-        'http://localhost:5000/api/comments',
+        'https://blogsphere-vj2p.onrender.com/api/comments',
         {
           method: 'POST',
           headers: {
